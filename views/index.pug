@@ -1,0 +1,15 @@
+extends layout.pug
+block header
+    link(rel='stylesheet' href='/styles/form-styles.css')
+block content
+    .border
+        h3(style="text-align:center")="جهت اطلاع از نام کاربری اینترنت لطفا کد ملی خود را وارد نمایید"
+        div.container
+            div.container__item
+                form.form(action="/user" method="POST")
+                    input(type="number" class="form__field" placeholder="کد ملی" name="code_melli")
+                    input(type="submit" class="btn btn--primary btn--inside uppercase" value="جستجو")
+        div(class="container__item container__item--bottom" style="position:relative; text-align:center; font-size:0.7rem")
+            p="توسعه توسط NEAS"
+
+

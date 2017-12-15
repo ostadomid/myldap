@@ -1,0 +1,11 @@
+extends layout.pug
+block header
+    link(rel='stylesheet' href='/styles/form-styles.css')
+block content
+    .border
+        h3(style="text-align:center;color:#dc0c0c")='نام کاربری شما هنوز فعال نشده است'
+        h4(style="text-align:center")='لطفا جهت درخواست فرم زیر را تکمیل و به مرکز رایانه بیمارستان تحویل دهید.'
+        div(style="text-align:center")
+            a.pdf-link.btn.pri.green(href=pdfLink)='فرم ثبت نام'    
+            a.pdf-link.btn.pri.red(href="/")='بازگشت'    
+    

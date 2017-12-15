@@ -1,0 +1,18 @@
+extends layout.pug
+block header
+    link(rel='stylesheet' href='/styles/form-styles.css')
+    link(rel='stylesheet' href='/styles/table.css')
+block content
+    table.rwd-table
+        tr
+            th="نام"
+            th="نام خانوادگی"
+            th="نام کاربری"
+            th="رمز عبور"
+        tr
+            td=firstName
+            td=lastName
+            td=userName
+            td="کد ملی"
+    div(style="text-align:center")
+        a.pdf-link.btn.pri.red(href="/")='بازگشت'    
